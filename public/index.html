@@ -11,7 +11,7 @@
 
       <h1>Euro: {{currencies.base}}</h1>
       <select>
-        <option v-for="currency in currencies">{{currency}}</option>
+        <option v-for="(value, key, index) in currencies">{{key}}: {{value}}</option>
       </select>
       <!-- <p v-for="currency in currencies">{{currency}}</p> -->
     </div>

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       fetchMoney: function () {
         const request = fetch("https://api.exchangeratesapi.io/latest")
         .then(response => response.json())
-        .then(payload => this.currencies = payload)
+        .then(payload => this.currencies = payload.rates)
         // .then(payload => this.rates = payload.rates)
         // console.log(rates);
       }
